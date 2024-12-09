@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FLEXBOX#4</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        height: calc(100vh - 8px);
+        gap: 4px;
+    }
+
+    nav, main, aside, footer {
+        border: 1px solid black;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 4px;
+    }
+
+    .a {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .n {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    .g {
+        background: red;
+        height: 30px;
+        width: 30px;
+    }
+
+    .e {
+        background: blue;
+        height: 25px;
+        width: 60px;
+    }
+
+    .l {
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+        gap: 4px;
+    }
+
+    main {
+        display: flex;
+        flex-grow: 1;
+        padding: 20px;
+        gap: 4px;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+
+    .k {
+        width: 30%;
+        height: 200px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    .r {
+        font-size: 16px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .i {
+        height: 100%;
+        border: 1px solid black;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding: 4px;
+    }
+
+    .s {
+        display: flex;
+        border: 1px solid black;
+        width: 15vw;
+        height: 5vh;
+    }
+
+    .t {
+        border: 1px solid black;
+        height: 90px;
+        width: 90px;
+    }
+
+    .z {
+        border: 1px solid black;
+        height: 180px;
+        width: 230px;
+    }
+
+    footer {
+        padding: 4px;
+        gap: 4px;
+    }
+
+    .m {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+    }
+
+    .u {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .angel {
+        display: flex;
+        gap: 4px;
+        flex-direction: row;
+    }
+
+    .kristine {
+        background: red;
+        height: 20px;
+        width: 20px;
+    }
+
+    .salazar {
+        padding: 4px;
+    }
+</style>
+<body>
+    <nav>
+        <div class="a">
+            <div class="g"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="n">
+            <div class="e"></div>
+            <div class="e"></div>
+        </div>
+    </nav>
+    <div class="l">
+        <main>
+            <div class="k">
+                <div class="r">Main box 1</div>
+                <div class="i"></div>
+            </div>
+            <div class="k">
+                <div class="r">Main box 2</div>
+                <div class="i"></div>
+            </div>
+        </main>
+        <aside>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+            <div class="s"></div>
+        </aside>
+    </div>
+    <footer>
+        <div class="m">
+            <div class="g"></div>
+            <div>
+                <p>FLEXBOX</p>
+            </div>
+        </div>
+        <div class="salazar">
+            <hr>
+        </div>
+        <div class="u">
+            <div class="angel">
+                <div class="kristine"></div>
+                <div class="kristine"></div>
+                <div class="kristine"></div>
+                <div class="kristine"></div>
+                <div class="kristine"></div>
+            </div>
+            <div class="text">
+                <p>&copy; Copyright All rights reserved</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
